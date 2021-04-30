@@ -30,11 +30,11 @@ export default class extends EventsModule {
         this.#renderNavigation();
         this.#renderFilters();
         this.#renderTimeline();
-        this.initEvents();
+        this.initMainEvents();
     }
 
     #renderTimeline() {
-        this.gridTimeline = new TimelineModule(this.gridWrapper);
+        this.gridTimeline = new TimelineModule(this.gridWrapper, this);
     }
 
     #renderNavigation() {

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Room 1",
+    "pax": 2,
+    "isDorm": false,
+    "beds": [
+      {
+        "type":  1,
+        "label": "queen"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Room 2",
+    "pax": 4,
+    "isDorm": false,
+    "beds": [
+      {
+        "type":  1,
+        "label": "queen"
+      },
+      {
+        "type":  1,
+        "label": "queen"
+      }
+    ]
+  }
+]

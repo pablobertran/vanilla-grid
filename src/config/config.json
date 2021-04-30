@@ -11,6 +11,10 @@
     },
     "filters": {
       "isEnabled": false
+    },
+    "axis": {
+      "x": null,
+      "y": "rooms"
     }
   }
 }

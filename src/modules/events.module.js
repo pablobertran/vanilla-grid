@@ -6,15 +6,20 @@ export class EventsModule extends ConfigModule {
         super();
     }
 
-    initEvents() {
+    initMainEvents() {
         this.#setListeners();
+    }
+
+    setCustomEvent(id = '', callback = () => {}, wrap = null, action = 'click') {
+        VGLogger.log(`Creating event. ID: ${id}`, 'info');
+        const wrapper = wrap ? wrap : document.querySelector(`.${this.settings.gridSettings.wrapperClass}`);
+        wrapper.addEventListener(action, callback);
     }
 
     #setListeners() {
         const events = Object.keys(this.eventHandlers);
-        const wrapper = document.querySelector(`.${this.settings.gridSettings.wrapperClass}`);
         events.forEach( function assignEventHandlers(eventName) {
-            wrapper.addEventListener(eventName, this.eventHandlers[eventName]);
+            this.setCustomEvent(eventName, this.eventHandlers[eventName]);
         }, this);
     }
 

@@ -5,6 +5,10 @@ const config = {
         orientation: 'horizontal',
         detailsOnCreate: false,
         detailsOnDblClick: false,
+        axis: {
+            x: null,
+            y: 'main',
+        },
         dates: {
             from: new Date(),
             timePeriod: 'week',

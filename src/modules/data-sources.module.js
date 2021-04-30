@@ -1,5 +1,7 @@
 "use strict";
 
+import VGLogger from "./logger.module";
+
 export class DataSourcesModule {
   constructor() {
     this.dataSources = {};
@@ -10,6 +12,7 @@ export class DataSourcesModule {
       throw Error(`DataSource ${name} already exists!`);
     }
 
+    VGLogger.log(`VanillaGrid | Added dataSource "${name}"`, 'log');
     this.dataSources[name] = dataSource;
   }
 
