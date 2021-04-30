@@ -1,0 +1,16 @@
+{
+  "gridSettings": {
+    "wrapperClass": "vanilla-grid-wrapper",
+    "gridType": "",
+    "timePeriod": "week",
+    "orientation": "horizontal",
+    "detailsOnCreate": false,
+    "detailsOnDblClick": false,
+    "navigation": {
+      "isEnabled": true
+    },
+    "filters": {
+      "isEnabled": false
+    }
+  }
+}

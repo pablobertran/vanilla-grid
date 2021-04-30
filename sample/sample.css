@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#bookings {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: [header] 50px [body] auto [footer] 40px;
+
+}
+
+.
